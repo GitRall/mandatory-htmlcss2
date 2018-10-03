@@ -63,7 +63,7 @@ nav ul li a:hover{
 
 /*-----MAIN START-----*/
 main{
-  padding-top: 30px;
+  padding: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -77,12 +77,10 @@ main img{
 main img:hover{
   opacity: 1;
 }
-main .small-anchor{
+main a{
   width: 15%;
-  margin: 15px;
-}
-main .big-anchor{
-  width: 40%;
+  flex-grow: 1;
+  min-width: 150px;
   margin: 15px;
 }
 /*-----MAIN END------*/
@@ -96,8 +94,5 @@ main .big-anchor{
   }
   header{
     justify-content: center;
-  }
-  main .small-anchor{
-    width: 40%;
   }
 }
