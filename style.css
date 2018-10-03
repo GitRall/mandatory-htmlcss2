@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+h1{
+  font-size: 5rem;
+  margin-left: 40px;
+  color: #deecfa;
+}
+
+
+
+/*-----HEADER START-----*/
+header{
+  height: 100px;
+  background-color: #337585;
+  display: flex;
+  align-items: center;
+  border-bottom: 7px solid #4295a8;
+}
+/*-----HEADER END-----*/
+
+
+
+/*-----NAV START-----*/
+nav{
+  height: 100%;
+  margin-left: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+nav ul{
+  height: 70%;
+  list-style: none;
+  display: flex;
+}
+nav ul li{
+  display: flex;
+  width: 150px;
+}
+nav ul li a{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #deecfa;
+  box-sizing: border-box;
+  border-bottom: 0 solid #4295a8;
+  transition: all 0.1s linear
+}
+nav ul li a:hover{
+  border-bottom: 5px solid #4295a8;
+  color: white;
+}
+/*-----NAV END-----*/
+
+
+
+/*-----MAIN START-----*/
+main{
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main img{
+  width: 100%;
+  box-shadow: 0 1px 10px 0 gray;
+  opacity: 0.8;
+  transition: opacity 0.1s linear;
+}
+main img:hover{
+  opacity: 1;
+}
+main .small-anchor{
+  width: 15%;
+  margin: 15px;
+}
+main .big-anchor{
+  width: 40%;
+  margin: 15px;
+}
+/*-----MAIN END------*/
+
+
+
+/*-----MEDIA QUERYS-----*/
+@media (max-width: 700px){
+  nav{
+    display:none;
+  }
+  header{
+    justify-content: center;
+  }
+  main .small-anchor{
+    width: 40%;
+  }
+}
